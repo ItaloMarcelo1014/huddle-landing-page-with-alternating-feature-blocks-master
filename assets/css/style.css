@@ -1,0 +1,538 @@
+/*reset*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--Pink);  
+    color: #ebf8fe;
+    cursor: pointer;
+}
+
+nav button:hover{
+    background-color: white;
+}
+
+button:hover{
+    background-color: #ff9bdb;
+}
+
+h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*root colors*/
+
+:root{
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+/*box img caixa de imagens*/
+
+.box-img img{
+    max-width: 292px;
+    max-height: 217px;
+}
+
+/*header */
+
+
+header{
+    background:url(../images/bg-hero-mobile.svg) no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-color:#ebf8fe; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10px 0 10px;
+    justify-content: space-between;
+}
+
+
+header nav img{
+    width: 100px;
+}
+
+header nav button{
+    width: 100px;
+    padding: 10px;
+    color: black;
+    background-color: #fff;
+    font-size: 12px;   
+}
+
+
+
+
+header .box-itens{
+    display: flex;
+    flex-direction: column;
+    margin:  55px 0 25px 0 ;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.break-line-new{
+    display: none;
+}
+
+.break-line{
+    display: flex;
+}
+
+
+header .info p{
+    margin-bottom: 10px;
+}
+
+
+
+header .bnt1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*section card background and more*/
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;   
+}
+
+.card-preview{
+    width: 400px;
+    height: 512px;
+    margin: 75px 15px 20px 15px;
+    background: rgba(230, 238, 241, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(230, 238, 241, 0.31);
+    /* From https://css.glass */
+    background: rgba(230, 238, 241, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(230, 238, 241, 0.31);
+}
+
+
+.card-preview .box-img{
+    margin: 40px 20px 40px 20px;
+}
+
+.info-box h3{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/*diviser card */
+
+
+.float-box{
+    border-radius: 10px;
+    width: 450px;
+    height: 200px;
+    background-color: aqua;
+    text-align: center;
+    background: rgba(230, 238, 241, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(230, 238, 241, 0.31);
+    /* From https://css.glass */
+    background: rgba(230, 238, 241, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(230, 238, 241, 0.31);
+}
+
+.float-box button{
+    margin-top: 10px;
+}
+
+.float-box h3{
+    color: black;
+    padding-top: 55px;
+    font-size: 25px;
+}
+
+
+.float-box{
+    margin-left: 10px;
+    z-index: 4px;
+    position: relative;
+    top: -110px;
+}
+
+
+
+/*footer*/
+
+
+
+footer{
+    padding: 10px;
+    text-align: left;
+    margin-top: 160px;
+    background-color: var(--Very-Dark-Cyan);
+    color: #fff;
+}
+
+.ultima-caixa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.logo-2 img {
+    width: 250px;
+    margin-left: 20px;
+}
+
+
+
+.address i {
+    margin-right: 10px;
+}
+
+#Copyright{
+    text-align: center;
+    margin: 5px;
+}
+
+
+.rowsItem{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.rowsItem .First {
+    position: relative;
+    left: 20px;
+}
+
+.map{
+    position: relative;
+    top: 25px;
+}
+
+ul {
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+li a{
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+.social img{
+    margin-left: 10px;
+    
+}
+
+/*rodape*/
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.boxs{
+    margin-left: 10px;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+
+.boxs i{
+    display: flex;
+    flex-direction: column;
+   padding-top: 6px;
+    align-items: center;
+    position: relative;
+   
+}
+
+.boxs i:hover{
+    color:#ff51c0;
+}
+
+
+@media screen and (min-width:1440px){
+
+    h2{
+        font-size: 32px;
+        margin-top: 80px;
+    }
+
+    .break-line{
+        display: none;
+    }
+
+    .break-line-new{
+        display: flex;
+    }
+
+    header{
+        background:url(../images/bg-hero-desktop.svg) no-repeat ;
+        background-color:#ebf8fe; 
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 15px 0 15px;
+        justify-content: space-between;
+    }
+
+
+    header .box-itens{
+        display: flex;
+        flex-direction: row;
+        margin:  55px 0 25px 0 ;
+        justify-content: space-evenly;
+        text-align: justify;
+    }
+
+    header nav img{
+        width: 207px;
+    } 
+
+    header nav button{
+    width: 200px;
+    padding: 10px;
+}
+
+   .box-itens .box-img img {
+        max-width: 692px;
+        min-height: 498px;
+    }
+
+    .info{
+        width: 600px;
+        height: 400px;
+        margin-top: 25px;
+    }
+
+    .info h2{
+        margin-bottom: 20px;
+    }
+
+    .info h2 .break-line {
+        display: flex;
+    }
+
+    .info p{
+        margin-bottom: 20px;
+    }
+    
+
+    /*section card and more*/
+
+    section{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: none;
+        text-align: justify;   
+        margin-bottom: 300px;
+      }
+      
+      .card-preview{
+        min-width: 1228px;
+        height: 485px;
+        margin: 75px 25px 5px 25px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        justify-content: space-around;
+         text-align: left;
+      }
+
+      .box-img{
+        padding-top: 12px;
+      }
+      
+    .reverse-verse{ 
+    flex-direction: row;
+    }
+    
+    #card-01{
+        margin-bottom: 40px;
+    }
+
+    .box-img img{
+     max-width: 430px;
+     max-height: 350px;
+    }
+      
+    .info-box{
+        font-size: 22px;
+        margin-bottom: 25px;
+        padding: 25px;
+        margin: 10px;
+    }
+
+    .info-box h3{
+        font-size: 28px;
+        margin-top: 90px;
+    }
+
+    /*footer*/
+
+
+    footer{
+        padding: 5px;
+        text-align: left;
+        margin-top: 16px;
+    }
+
+
+    footer .float-box{
+        border-radius: 10px;
+        width: 805px;
+        height: 288px;
+    }
+    
+    .float-box{
+        top: -119px;
+        left: 255px;
+    }
+
+
+
+    
+    .ultima-caixa{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        position: relative;
+        top: -55px;
+    }
+
+
+
+    .box-2{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    
+    .logo-2 img {
+        position: relative;
+        top:-10px;
+        padding: 10px;
+    }
+   
+     
+li a{
+    justify-content: none;
+}
+
+
+ul{
+   list-style: none;
+   width: 600px;
+   margin-left: 50px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+}
+
+li{
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+    height: 25px;
+}
+
+li a{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box-1{
+    padding: 20px;
+}
+
+.float-box button{
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+#Copyright{
+    text-align: right;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+    
+
+}
